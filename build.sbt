@@ -17,3 +17,5 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("releases"),
   Resolver.mavenLocal
 )
+
+lazy val tapeout = (project in file("./tools/barstools/"))
