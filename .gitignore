@@ -1,0 +1,7 @@
+verilog/
+*.fir
+*.f
+*.anno.json
+target/*
+project/*
+.bsp/*
