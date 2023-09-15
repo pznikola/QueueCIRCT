@@ -14,7 +14,7 @@ object QueueUIntChirtlApp extends App {
     }
     val file = new File("./test_and_run/Queue.fir")
     val w = new BufferedWriter(new FileWriter(file))
-    w.write(ChiselStage.emitCHIRRTL(new Queue(UInt(16.W), 2, pipe = true)))
+    w.write(ChiselStage.emitCHIRRTL(new Queue(UInt(16.W), 1024, pipe = true)))
     w.close
 }
 
@@ -26,6 +26,6 @@ object QueueSIntChirtlApp extends App {
     }
     val file = new File("./test_and_run/Queue.fir")
     val w = new BufferedWriter(new FileWriter(file))
-    w.write(ChiselStage.emitCHIRRTL(new Queue(SInt(16.W), 2, pipe = true)))
+    w.write(ChiselStage.emitCHIRRTL(new Queue(SInt(16.W), 1024, pipe = true)))
     w.close
 }
